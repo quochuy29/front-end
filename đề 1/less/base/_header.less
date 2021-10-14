@@ -1,0 +1,103 @@
+.header{
+    background-color: #222222 ;
+    &-top{
+        .web-info{
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 30px;
+            color: #525252;
+            font-family: opensans;
+            font-size: 14px;
+            .header-top-left{
+                display: flex;
+                .header-title{
+                    padding-left: 5px;
+                    letter-spacing: 0.01em;
+                }
+            }
+            .header-top-right{
+                .web-info-button{
+                    display: flex;
+                    flex-direction: row;
+                    margin-right: 30px;
+                    .info-icon{
+                        margin-right: 5px;
+                    }
+                    &:last-child{
+                        margin-right: 17px;
+                    }
+                    .info-content{
+                        letter-spacing: 0.01em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.menu-bar{
+    &-inner{
+        border-bottom: 1px solid #dddddd;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 200px;
+            height: 40px;
+            padding-left: 30px;
+        }
+        .navbar-icon{
+            font-size: 24px;
+            padding-left: 30px;
+            display: none;
+        }
+        nav{
+            display: flex;
+            .navbar{
+                margin-right: 173px;
+                display: flex;
+                .search{
+                    width: 100%;
+                    display: none;
+                    &-input{
+                        height: 30px;
+                        border-radius: 10px;
+                        margin-left: 27px;
+                    }
+                }
+                .nav-item{
+                    a{
+                        text-transform: uppercase;
+                        font-family: "montserrat";
+                        font-weight: 700;
+                        font-size: 14px;
+                        padding: 0px 27px;
+                        letter-spacing: 0.01em;
+                    }
+                    i{
+                        font-size: 14px;
+                    }
+                    &:last-child{
+                        position: relative;
+                        top: 1px;
+                        left: 29px;
+                    }
+                }
+            }
+        }
+        .menu-bar-icon{
+            display: flex;
+            padding-right: 30px;
+            .nav-icon{
+                margin-top: 3px;
+                font-size: 24px;
+                line-height: 22px;
+                padding-right: 32px;
+                &:last-child{
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}
