@@ -1,0 +1,191 @@
+.footer {
+    background-color: #222222;
+    height: 100%;
+
+    .footer-top {
+        display: flex;
+        padding: 43px 0 0 0;
+
+        .row-footer {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .footer-item {
+            &:nth-child(3) {
+                .col(25%);
+                padding-left: 16px;
+            }
+
+            &:nth-child(2) {
+                .col(50%);
+                padding-left: 112px;
+            }
+
+            &:first-child {
+                .col(25%);
+            }
+
+            &-title {
+                font-size: 16px;
+                letter-spacing: 0.7px;
+                line-height: 22px;
+                color: #f7f7f7;
+                font-weight: 400;
+                font-family: "montserrat";
+            }
+
+            &-content {
+                font-size: 14px;
+                line-height: 22px;
+                color: #888888;
+                font-weight: 400;
+                font-family: "opensans";
+                margin-top: 22px;
+                letter-spacing: 0.02em;
+            }
+
+            .icon-inner-footer {
+                display: flex;
+
+                .icon-social {
+                    margin: 45px 16px;
+
+                    a {
+                        color: #828282;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            nav {
+                width: 360px;
+                display: flex;
+
+                .navigation-list {
+                    margin: 22px 30px;
+                    width: 165px;
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+
+                    li {
+                        margin: 8px 0px;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        a {
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #888888;
+                            font-weight: 400;
+                            font-family: "opensans";
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .footer-infor {
+                &-item {
+                    display: flex;
+                    font-size: 14px;
+
+                    font-weight: 400;
+                    font-family: "opensans";
+                    margin-top: 25px;
+
+                    a {
+                        color: #888888;
+                    }
+
+                    .info-content {
+                        padding-left: 15px;
+                        letter-spacing: 0.02em;
+                    }
+
+                    .address {
+                        line-height: 1.9;
+                    }
+
+                    .phone {
+                        margin-top: -9px;
+                    }
+
+                    .mail {
+                        margin-top: -13px;
+                    }
+                }
+            }
+
+            .border-item-footer {
+                border-bottom: 1px solid #393939;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    .border-footer {
+        border: 1px solid #393939;
+        margin-top: -1px;
+    }
+
+    .copyright {
+        background-color: #222222;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            line-height: 45px;
+
+            .copyright-text {
+                color: #888888;
+                margin-top: -5px;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: "opensans";
+                letter-spacing: 0.02em;
+
+                span {
+                    color: #ffffff;
+                }
+
+                i {
+                    font-size: 12px;
+                    color: #ff4628;
+                }
+            }
+
+            nav {
+                margin-top: -3px;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        color: #888888;
+                        margin-right: 5px;
+
+                        i {
+                            font-size: 23px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
