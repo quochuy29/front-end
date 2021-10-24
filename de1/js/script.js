@@ -5,18 +5,23 @@ $(document).ready(function() {
         $(this).find('.header-title').toggle('show');
         $(this).siblings().toggle('hide');
     });
-    
+
     $('.web-info-button').click(function(e) {
         e.preventDefault();
         $(this).find('.info-content').toggle('show');
         $(this).siblings().toggle('hide');
     });
 
-    let navbar = document.querySelector('.navbar-menu');
+    let navbar = document.querySelector('.navbar');
     let cover = document.querySelector('.cover');
     $('.navbar-icon').click(function(e) {
         e.preventDefault();
         navbar.classList.toggle('active');
-        cover.classList.toggle('active-cover');
+        cover.classList.toggle('active');
+    });
+    $('.cover').click(function(e) {
+        e.preventDefault();
+        $('.navbar').removeClass('active');
+        $('.cover').removeClass('active');
     });
 });
