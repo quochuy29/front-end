@@ -124,6 +124,9 @@ body {
   padding-left: 5px;
   letter-spacing: 0.01em;
 }
+.header-top .web-info .header-top-left a {
+  color: #525252;
+}
 .header-top .web-info .header-top-right .web-info-button {
   display: flex;
   flex-direction: row;
@@ -137,6 +140,9 @@ body {
 }
 .header-top .web-info .header-top-right .web-info-button .info-content {
   letter-spacing: 0.01em;
+}
+.header-top .web-info .header-top-right .web-info-button a {
+  color: #525252;
 }
 .menu-bar-inner {
   padding: 0 30px;
