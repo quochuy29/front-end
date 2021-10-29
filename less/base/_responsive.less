@@ -63,10 +63,10 @@
             }
 
             .menu-bar-icon {
-                .nav-icon {
-                    &:first-child {
-                        display: block;
-                    }
+                .navbar-icon {
+                    display: block;
+                    padding: 2px 0;
+                    font-size: 30px;
                 }
             }
         }
@@ -206,7 +206,9 @@
 
             .logo {
                 width: 100%;
+                text-align: center;
             }
+
 
             .menu-bar-icon {
                 width: 100%;
@@ -215,6 +217,22 @@
 
                 .navbar-icon {
                     padding-left: 0;
+                    width: 50%;
+                    text-align: left;
+                   
+                }
+
+                .nav-icon-item {
+                    width: 50%;
+                    justify-content: right;
+
+                    .nav-icon {
+                        padding-left: 0;
+                        padding-right: 26px;
+                        &:last-child{
+                            padding-right: 0
+                        }
+                    }
                 }
             }
         }
@@ -318,4 +336,44 @@
         }
     }
 
+}
+
+@media all and (max-width:430px) {
+    .header {
+        &-top {
+            .web-info {
+                text-align: center;
+                flex-wrap: wrap;
+
+                .header-top-left {
+                    font-size: 12px;
+                }
+
+                .header-top-right {
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+}
+
+@media all and (max-width:285px) {
+    .header {
+        &-top {
+            .web-info {
+                text-align: center;
+                flex-wrap: wrap;
+
+                .header-top-left {
+                    font-size: 10px;
+                }
+
+                .header-top-right {
+                    font-size: 10px;
+                }
+            }
+        }
+
+    }
 }
