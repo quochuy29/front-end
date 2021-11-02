@@ -179,12 +179,19 @@ body {
 .menu-bar-inner nav .navbar .nav-item:last-child {
   margin-right: 0;
 }
+.menu-bar-inner nav .navbar .nav-item:last-child:hover {
+  color: #000;
+}
 .menu-bar-inner nav .navbar .nav-item a {
+  color: #000;
   text-transform: uppercase;
   font-family: "montserrat";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.01em;
+}
+.menu-bar-inner nav .navbar .nav-item a:hover {
+  color: #8262b5;
 }
 .menu-bar-inner nav .navbar .nav-item i {
   font-size: 14px;
