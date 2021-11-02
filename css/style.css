@@ -180,11 +180,15 @@ body {
   margin-right: 0;
 }
 .menu-bar-inner nav .navbar .nav-item a {
+  color: #000;
   text-transform: uppercase;
   font-family: "montserrat";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.01em;
+}
+.menu-bar-inner nav .navbar .nav-item a:hover {
+  color: #8262b5;
 }
 .menu-bar-inner nav .navbar .nav-item i {
   font-size: 14px;
@@ -213,6 +217,16 @@ body {
 }
 .list-news-name {
   padding: 76px 0px;
+}
+.list-news-name:before {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: #8262b5;
+  position: absolute;
+  left: 48.8%;
+  margin-top: 77px;
+  transform: translateY(-50%);
 }
 .list-news-name .title-news {
   font-size: 12px;
@@ -514,7 +528,7 @@ body {
 }
 .footer {
   background-color: #222222;
-  height: 100%;
+  height: 417px;
 }
 .footer .footer-top {
   display: flex;
@@ -616,7 +630,7 @@ body {
   letter-spacing: 0.02em;
 }
 .footer .footer-top .footer-item .footer-infor-item .address {
-  line-height: 1.9;
+  line-height: 2;
 }
 .footer .footer-top .footer-item .footer-infor-item .phone {
   margin-top: -9px;
