@@ -122,27 +122,40 @@
                 .col(100%);
 
                 .banner-col {
-                    height: 200px;
-                    max-height: 200px;
+                    height: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     margin: 0 -15px;
-                    justify-content: center;
-                    align-items: center;
 
                     .banner-right-item {
                         .col(50%);
                         margin: 0;
-                        height: 100%;
-                        overflow: hidden;
 
                         &-inner {
-                            overflow: hidden;
-                            height: 100%;
 
                             img {
-                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        &:last-child {
+                            position: relative;
+
+                            .banner-right-item-inner {
+                                width: 100%;
+                                position: relative;
                                 overflow: hidden;
+                                height: 100%;
+
+                                img {
+                                    position: absolute;
+                                }
+
+                                .content-bottom {
+                                    position: absolute;
+                                    top: 14%;
+                                    left: 11%;
+                                }
                             }
                         }
                     }
@@ -219,7 +232,7 @@
                     padding-left: 0;
                     width: 50%;
                     text-align: left;
-                   
+
                 }
 
                 .nav-icon-item {
@@ -229,7 +242,8 @@
                     .nav-icon {
                         padding-left: 0;
                         padding-right: 26px;
-                        &:last-child{
+
+                        &:last-child {
                             padding-right: 0
                         }
                     }
@@ -252,6 +266,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 text-align: center;
+                row-gap: 10px;
 
                 .copyright-text {
                     width: 100%;
@@ -290,6 +305,17 @@
                     .banner-right-item {
                         .col(100%);
 
+                        &:last-child {
+                            .banner-right-item-inner {
+                                width: 100%;
+                                position: relative;
+                                overflow: unset;
+
+                                img {
+                                    position: unset;
+                                }
+                            }
+                        }
                     }
                 }
             }
