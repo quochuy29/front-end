@@ -7,6 +7,8 @@
 
     .menu-bar {
         &-inner {
+            padding-left: 15px;
+
             .navbar-icon {
                 display: block;
             }
@@ -130,6 +132,10 @@
                     .banner-right-item {
                         .col(50%);
                         margin: 0;
+
+                        .down {
+                            padding-bottom: 0%;
+                        }
 
                         &-inner {
                             line-height: 0;
@@ -336,33 +342,25 @@
     .footer {
         .footer-top {
             .footer-item {
+                .item-detail {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+
                 &:nth-child(3) {
                     .col(100%);
                     padding-left: 15px;
-
-                    .footer-infor {
-                        display: none;
-                    }
                 }
 
                 &:nth-child(2) {
                     .col(100%);
-
-                    nav {
-                        display: none;
-                    }
                 }
 
                 &:first-child {
                     .col(100%);
-
-                    .footer-item-content {
-                        display: none;
-                    }
-
-                    .icon-inner-footer {
-                        display: none;
-                    }
                 }
             }
         }
