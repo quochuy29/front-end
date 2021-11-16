@@ -6,6 +6,7 @@
             .col(66.5%);
 
             .banner-inner {
+                padding-bottom: 75%;
                 position: relative;
             }
 
@@ -13,13 +14,19 @@
                 display: block;
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
             }
 
             position: relative;
 
             &-content {
                 position: absolute;
-                top: 55%;
+                top: 55.3%;
                 right: 11.9%;
                 letter-spacing: 0.01em;
 
@@ -55,16 +62,31 @@
             &-item {
                 width: 100%;
 
+                .down {
+                    padding-bottom: 92%;
+                }
+
+                .up {
+                    padding-bottom: 56%;
+                }
+
                 &-inner {
                     position: relative;
+                    padding-bottom: 56%;
 
                     img {
                         width: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
                     }
                 }
 
                 &:last-child {
-                    padding-top: 25px;
+                    padding-top: 28px;
                 }
             }
 
@@ -109,7 +131,7 @@
                         font-weight: 400;
                         color: #ffffff;
                         line-height: 40px;
-                        padding: 20px 15px;
+                        padding: 20px 16px;
                     }
                 }
             }
@@ -119,7 +141,7 @@
 }
 
 .top-selling {
-    padding-top: 57px;
+    padding-top: 60px;
     padding-bottom: 34px;
 
     .title-selling {
@@ -156,80 +178,87 @@
         .list-product-inner {
             .product-img {
                 position: relative;
-                line-height:0;
+                padding-bottom: 124.050847%;
 
                 img {
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
                     width: 100%;
                 }
+            }
 
-                .cart {
-                    position: absolute;
-                    width: 118px;
-                    height: 40px;
-                    background-color: #ffffff;
-                    bottom: 5px;
-                    left: 5px;
-                    text-align: center;
-                    line-height: 42px;
+            .cart {
+                position: absolute;
+                width: 118px;
+                height: 40px;
+                background-color: #ffffff;
+                bottom: 3%;
+                left: 2%;
+                text-align: center;
+                line-height: 42px;
 
-                    a {
+                a {
+                    font-size: 12px;
+                    line-height: 40px;
+                    color: #424242;
+                    font-weight: 400;
+                    font-family: "Montserrat";
+                    text-transform: uppercase;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #8262b5;
+                    }
+                }
+            }
+        }
+
+        .product-content {
+            .product-name {
+                padding-top: 14px;
+                font-size: 14px;
+                color: #000000;
+                font-weight: 400;
+                font-family: "Montserrat";
+            }
+
+            .product-star {
+                padding-top: 10px;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        color: #f9c325;
                         font-size: 12px;
-                        line-height: 40px;
-                        color: #424242;
-                        font-weight: 400;
-                        font-family: "Montserrat";
-                        text-transform: uppercase;
+                    }
 
-                        &:hover {
-                            cursor: pointer;
-                            color: #8262b5;
+                    .star-item {
+                        :last-child {
+                            color: #e6e6e6;
                         }
                     }
                 }
             }
 
-            .product-content {
-                .product-name {
-                    padding-top: 18px;
-                    font-size: 14px;
-                    color: #000000;
-                    font-weight: 400;
-                    font-family: "Montserrat";
+            .product-price {
+                padding-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: "Montserrat";
+
+                &-old {
+                    color: #a0a0a0;
+                    text-decoration-line: line-through;
                 }
 
-                .product-star {
-                    padding-top: 10px;
-
-                    ul {
-                        display: flex;
-
-                        li {
-                            color: #f9c325;
-                            font-size: 12px;
-                        }
-
-                        .star-item {
-                            :last-child {
-                                color: #e6e6e6;
-                            }
-                        }
-                    }
-                }
-
-                .product-price {
-                    padding-top: 8px;
-                    font-size: 14px;
-                    font-weight: 400;
-                    font-family: "Montserrat";
-
-                    &-old {
-                        color: #a0a0a0;
-                        text-decoration-line: line-through;
-                    }
-
-                    &-sale {
-                        color: #8262b5;
-                    }
+                &-sale {
+                    color: #8262b5;
                 }
             }
         }
